@@ -21,31 +21,34 @@
     <!-- Шапка сторінки -->
     <header class="header">
       <!-- Навігація на інші сторінки -->
-      <nav>
+      <nav class="nav">
         <a href="./index.html" class="logo"
           ><span class="logo-web">Web</span>Studio</a
         >
         <ul class="site-nav">
-          <li><a href="./index.html" class="site-nav-сurrent">Студия</a></li>
-          <li>
+          <li class="item">
+            <a href="./index.html" class="site-nav-сurrent">Студия</a>
+          </li>
+          <li class="item">
             <a href="./portfolio.html" class="site-nav-link">Портфолио</a>
           </li>
-          <li><a href="" class="site-nav-link">Контакты</a></li>
+          <li class="item"><a href="" class="site-nav-link">Контакты</a></li>
+        </ul>
+
+        <!-- Контакти -->
+        <ul class="contact-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact-nav-mt"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contact-nav-mt"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </nav>
-      <!-- Контакти -->
-      <ul class="contact-nav">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-nav-mt"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-nav-mt"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
     </header>
 
     <main class="section">
@@ -95,80 +98,119 @@
       </section>
 
       <!-- Заняття -->
-      <section>
+      <section class="s-work">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="section-work">
+        <ul class="section-work work">
           <li>
             <img
               src="./images/img.jpg"
+              class="img"
               alt="Рабочий стол, планшет"
               width="370"
             />
           </li>
           <li>
-            <img src="./images/img1.jpg" alt="Смартфон, ноутбук" width="370" />
+            <img
+              src="./images/img1.jpg"
+              class="img"
+              alt="Смартфон, ноутбук"
+              width="370"
+            />
           </li>
-          <li><img src="./images/img2.jpg" alt="Планшет" width="370" /></li>
+          <li>
+            <img
+              src="./images/img2.jpg"
+              class="img"
+              alt="Планшет"
+              width="370"
+            />
+          </li>
         </ul>
       </section>
 
       <!-- Команда -->
-      <section class="section-team">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="section-work">
-          <li>
-            <img src="./images/ID.jpg" alt="Игорь Демьяненко" width="270" />
-            <h3 class="section-team-title">Игорь Демьяненко</h3>
-            <p class="section-feature-text">Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/OR.jpg" alt="Ольга Репина" width="270" />
-            <h3 class="section-team-title">Ольга Репина</h3>
-            <p class="section-feature-text">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/NT.jpg" alt="Николай Тарасов" width="270" />
-            <h3 class="section-team-title">Николай Тарасов</h3>
-            <p class="section-feature-text">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/ME.jpg" alt="Михаил Ермаков" width="270" />
-            <h3 class="section-team-title">Михаил Ермаков</h3>
-            <p class="section-feature-text">UI Designer</p>
-          </li>
-        </ul>
-      </section>
+      <div class="section-color">
+        <section class="section-team">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="section-work work">
+            <li>
+              <img
+                src="./images/ID.jpg"
+                class="img"
+                alt="Игорь Демьяненко"
+                width="270"
+              />
+              <h3 class="section-team-title">Игорь Демьяненко</h3>
+              <p class="section-team-text">Product Designer</p>
+            </li>
+            <li>
+              <div class="img-color">
+                <img
+                  src="./images/OR.jpg"
+                  class="img"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+                <h3 class="section-team-title">Ольга Репина</h3>
+                <p class="section-team-text">Frontend Developer</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/NT.jpg"
+                class="img"
+                alt="Николай Тарасов"
+                width="270"
+              />
+              <h3 class="section-team-title">Николай Тарасов</h3>
+              <p class="section-team-text">Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/ME.jpg"
+                class="img"
+                alt="Михаил Ермаков"
+                width="270"
+              />
+              <h3 class="section-team-title">Михаил Ермаков</h3>
+              <p class="section-team-text">UI Designer</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
-      <!-- Контактні дані -->
-      <a href="./index.html" class="logo-footer"
-        ><span class="logo-web">Web</span>Studio</a
-      >
-      <address>
-        <ul class="footer-address">
-          <li>
-            <a
-              href="https://goo.gl/maps/rYCr92r1BttdTYW5A"
-              class="footer-contact-address"
-              target="_blank"
-              rel="noopener noferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-contact-nav-mt"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="footer-contact-nav-mt"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </footer>
+    <div class="footer-color">
+      <footer class="footer">
+        <!-- Контактні дані -->
+        <a href="./index.html" class="logo-footer"
+          ><span class="logo-web">Web</span>Studio</a
+        >
+        <address>
+          <ul class="footer-address">
+            <li>
+              <a
+                href="https://goo.gl/maps/rYCr92r1BttdTYW5A"
+                class="footer-contact-address"
+                target="_blank"
+                rel="noopener noferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="footer-contact-nav-mt"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="footer-contact-nav-mt"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
