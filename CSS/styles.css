@@ -18,6 +18,10 @@ html {
   --bg-color: #2f303a;
   --team-color: #f5f4fa;
   --footer-color: rgba(255, 255, 255, 0.6);
+  --shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 img {
@@ -37,13 +41,15 @@ body {
 .header {
   background-color: var(--add-color);
 }
+.header .container {
+  display: flex;
+}
 .nav {
   display: flex;
   align-items: baseline;
 }
 .logo {
   margin-right: 93px;
-  margin-left: auto;
 
   color: var(--title-text-color);
 
@@ -121,7 +127,7 @@ body {
 }
 .contact-nav {
   display: flex;
-  margin: auto;
+  margin-left: auto;
 }
 /* main */
 .section {
@@ -129,13 +135,15 @@ body {
 }
 /* Герой */
 .hero {
-  height: 600px;
+  padding-bottom: 200px;
 
   background-color: var(--bg-color);
 
   text-align: center;
 }
 .hero-title {
+  max-width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   padding-top: 200px;
 
@@ -168,8 +176,6 @@ body {
 }
 /* Особливості */
 .container {
-  margin-top: 91px;
-  margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -180,6 +186,8 @@ body {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 91px;
+  padding-bottom: 91px;
 
   font-style: normal;
   font-weight: normal;
@@ -213,6 +221,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 114px;
 }
 .work {
   display: flex;
@@ -240,7 +249,6 @@ body {
 
 .section-color {
   background-color: var(--team-color);
-  margin-top: 114px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -259,7 +267,8 @@ body {
   letter-spacing: 0.03em;
 }
 .card-team {
-  background-color: white;
+  box-shadow: var(--shadow);
+  background-color: var(--add-color);
   margin-right: 30px;
   border-radius: 4px;
 }
@@ -276,6 +285,9 @@ body {
 
   font-weight: 500;
   font-size: 16px;
+}
+.team {
+  margin-right: 0;
 }
 
 /* Футер */
@@ -370,6 +382,7 @@ body {
 }
 .card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .card-title {
   color: var(--title-text-color);
@@ -416,4 +429,5 @@ body {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--add-color);
+  box-shadow: var(--shadow-button);
 }
