@@ -136,7 +136,7 @@ body {
 /* Герой */
 .hero {
   padding-bottom: 200px;
-
+  padding-top: 200px;
   background-color: var(--bg-color);
 
   text-align: center;
@@ -145,7 +145,6 @@ body {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--add-color);
 
@@ -182,6 +181,15 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section-special {
+  width: 270px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+.section-special:last-child {
+  margin-right: 0;
+}
 .section-feature {
   display: flex;
   margin-top: 0;
@@ -208,12 +216,7 @@ body {
   margin-top: auto;
   margin-bottom: 10px;
 }
-.section-feature-text {
-  width: 270px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 10px;
-}
+
 /* Заняття */
 .s-work {
   width: 1200px;
@@ -242,8 +245,11 @@ body {
   margin: 0;
   padding: 0;
 }
-.img {
+.section-img {
   margin-right: 30px;
+}
+.section-img:last-child {
+  margin-right: 0;
 }
 /* Команда */
 
@@ -362,6 +368,42 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.button {
+  justify-content: center;
+  display: flex;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+.mg-r {
+  margin-right: 8px;
+}
+.portfolio-button {
+  border-radius: 4px;
+
+  padding: 6px 22px;
+
+  background-color: var(--team-color);
+  border: none;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+/*.portfolio-button:last-child {
+  margin-right: 0;
+}*/
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--add-color);
+  box-shadow: var(--shadow-button);
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -397,37 +439,4 @@ body {
   margin-top: 4px;
 
   color: var(--primary-text-color);
-}
-.button {
-  justify-content: center;
-  display: flex;
-  margin: 0 0 50px 0;
-  padding: 0;
-}
-.portfolio-button {
-  border-radius: 4px;
-  margin-right: 8px;
-  padding: 6px 22px;
-
-  background-color: var(--team-color);
-  border: none;
-
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  cursor: pointer;
-}
-/*.portfolio-button:last-child {
-  margin-right: 0;
-}*/
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background-color: var(--accent-color);
-  color: var(--add-color);
-  box-shadow: var(--shadow-button);
 }
