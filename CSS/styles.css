@@ -129,6 +129,7 @@ body {
 }
 .contact-nav {
   display: flex;
+  align-self: center;
   margin-left: auto;
 }
 /* main */
